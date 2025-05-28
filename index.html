@@ -1,27 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cello</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        margin: 8px 0;
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="logo">facebook</h1>
-        <div class="login-box">
-            <fieldset>
-                <legend>login page</legend>
-            <form>
-                <input type="text" placeholder="Email or Phone Number" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Log In</button>
-                <a href="#" class="forgot">Forgotten password?</a>
-                <hr>
-                <button class="create-btn">Create New Account</button>
-            </form>
-            </fieldset>
-        </div>
+
+  <nav>
+    <div class="navbar">
+      <div class="logo">Cello</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Help</a>
+      </div>
     </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome to Cello</h1>
+    <p>Explore our collection of premium bottles</p>
+  </div>
+
+  <div class="gallery">
+    <img src="orange-color-water-bottle-3d-vector-white-background-isol_873925-597688.avif" alt="Bottle 1">
+    <img src="eyecatching-ads-with-custom-water-bottle-mockup-templates_886983-3897.jpg" alt="Bottle 2">
+    <img src="OIP.jpg" alt="Bottle 3">
+    <img src="orange-color-water-bottle-3d-vector-white-background-isol_873925-597688.avif" alt="Bottle 4">
+    <h1>i am the h1 tag</h1>
+  </div>
+
 </body>
 </html>
